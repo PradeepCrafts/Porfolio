@@ -42,6 +42,7 @@ margin-left: 35px;
 transition: .3s;
 opacity: 0;
 animation: slideTop .5s ease forwards;
+animation-delay: calc(.2s * var(--i));
 }
 .navbar a:hover{
     color: #0ef;
@@ -123,6 +124,10 @@ animation: slideTop .5s ease forwards;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay:2s ;
+    box-shadow: 0 0 5px #0ef,0 0 25 #0ef;
 
 }
 .btn-box:hover{
@@ -156,7 +161,7 @@ animation: slideTop .5s ease forwards;
 @keyframes slideTop
 {
     0%{
-        transform: translateY(-100px);
+        transform: translateY(100px);
         opacity: 0;
     }
     100%{
